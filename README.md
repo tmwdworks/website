@@ -6,6 +6,29 @@ Public website for **TMWD Works**.
 - Hosting: GitHub Pages
 - Stack: static HTML / CSS / JavaScript
 
+## Pages
+
+- `/` — overview / entry point
+- `/personal.html` — personal and household IT support
+- `/business.html` — AI / software / IT support for sole proprietors and small businesses
+- `/learning.html` — IT / programming tutoring and technical mentoring
+- `/contact.html` — contact form UI
+- `/privacy.html` — privacy policy
+
+## Contact form
+
+The contact page posts directly to Formspree:
+
+- Endpoint: `https://formspree.io/f/moevrdwn`
+- Method: `POST`
+- Encoding: UTF-8
+- Submission: asynchronous `fetch` with `Accept: application/json`
+- UI: Japanese success/error messages are shown on the page
+- Fallback contact: `tmwdworks@gmail.com`
+
+The Formspree project is restricted to the production domain, so form submission should
+be tested from `https://tmwdworks.jp/` rather than localhost.
+
 ## Local preview
 
 ```bash
@@ -18,5 +41,3 @@ Open `http://localhost:8000`.
 
 Publish from the `main` branch, repository root (`/`).
 The `CNAME` file configures `tmwdworks.jp` as the custom domain.
-
-DNS must be configured separately at the domain registrar.

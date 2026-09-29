@@ -7,15 +7,23 @@
   <meta name="robots" content="index,follow">
   <link rel="icon" href="assets/tmwdworks-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .legal { max-width: 780px; padding: 80px 0; }
-    .legal h1 { font-size: 40px; }
-    .legal h2 { font-size: 24px; margin-top: 36px; }
-    .legal p, .legal li { color: #555b61; }
-  </style>
 </head>
 <body>
-  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="assets/tmwdworks-logo.svg" alt="TMWD Works"></a></div></header>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="TMWD Works ホーム">
+      <img src="assets/tmwdworks-logo-header.svg" alt="TMWD Works">
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">Menu</button>
+    <nav id="global-nav" class="global-nav" aria-label="メインナビゲーション">
+      <a href="personal.html">個人の方</a>
+      <a href="business.html">事業者の方</a>
+      <a href="learning.html">学習・技術指導</a>
+      <a href="/#profile">プロフィール</a>
+      <a class="nav-cta" href="contact.html">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
   <main class="container legal">
     <p class="section-kicker">Privacy</p>
     <h1>プライバシーポリシー</h1>
@@ -26,11 +34,27 @@
     <ul><li>お問い合わせへの回答</li><li>サービスの提案・提供・連絡</li><li>必要な事務処理</li></ul>
     <h2>第三者提供</h2>
     <p>法令に基づく場合を除き、ご本人の同意なく個人情報を第三者へ提供しません。</p>
+    <h2>お問い合わせフォーム</h2>
+    <p>お問い合わせフォームの送信にはFormspreeを利用します。フォームに入力された氏名、メールアドレス、相談区分、お問い合わせ内容は、問い合わせ受付と返信のためにFormspreeを経由して送信されます。</p>
     <h2>アクセス解析・Cookie</h2>
     <p>本サイトは公開時点で独自のアクセス解析ツールを設置していません。将来導入する場合は本ページを更新します。</p>
     <h2>お問い合わせ</h2>
-    <p><a href="mailto:tmwdworks@gmail.com">tmwdworks@gmail.com</a></p>
-    <p><a href="index.html">← ホームへ戻る</a></p>
+    <p><a href="contact.html">お問い合わせフォーム</a> / <a href="mailto:tmwdworks@gmail.com">tmwdworks@gmail.com</a></p>
+    <p><a href="/">← ホームへ戻る</a></p>
   </main>
+  <footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>TMWD Works</strong>
+      <p>Urayasu, Chiba, Japan</p>
+    </div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/tmwdworks" rel="noopener">GitHub</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> TMWD Works</p>
+  </div>
+</footer>
+  <script src="script.js"></script>
 </body>
 </html>

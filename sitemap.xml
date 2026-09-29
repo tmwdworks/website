@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://tmwdworks.jp/</loc></url>
+  <url><loc>https://tmwdworks.jp/personal.html</loc></url>
+  <url><loc>https://tmwdworks.jp/business.html</loc></url>
+  <url><loc>https://tmwdworks.jp/learning.html</loc></url>
+  <url><loc>https://tmwdworks.jp/contact.html</loc></url>
   <url><loc>https://tmwdworks.jp/privacy.html</loc></url>
 </urlset>
