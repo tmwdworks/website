@@ -41,3 +41,12 @@ Open `http://localhost:8000`.
 
 Publish from the `main` branch, repository root (`/`).
 The `CNAME` file configures `tmwdworks.jp` as the custom domain.
+
+## Static asset cache busting
+
+CSS and JavaScript references include a release query string:
+
+- `styles.css?v=20260930-v5`
+- `script.js?v=20260930-v5`
+
+Increment the version string when CSS or JavaScript changes so browsers fetch the updated assets after deployment.
