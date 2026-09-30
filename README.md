@@ -31,6 +31,19 @@ The contact page posts directly to Formspree:
 The Formspree project is restricted to the production domain, so form submission should
 be tested from `https://tmwdworks.jp/` rather than localhost.
 
+## Google Analytics
+
+Google Analytics 4 is installed on the root website pages.
+
+- Measurement ID: `G-C59W6H3G6D`
+- Enhanced Measurement: configured in the GA4 web stream
+- Successful Formspree submissions emit the recommended GA4 event `generate_lead`
+- Event parameters:
+  - `lead_source`: `website_contact_form`
+  - `service_category`: selected inquiry category
+- Name, email address, message body, and other contact-form PII are not sent in the custom GA event
+- Nested app-specific privacy pages under `apps/` are intentionally not tagged by this website release
+
 ## Local preview
 
 ```bash
@@ -48,7 +61,7 @@ The `CNAME` file configures `tmwdworks.jp` as the custom domain.
 
 CSS and JavaScript references include a release query string:
 
-- `styles.css?v=20260930-v5`
-- `script.js?v=20260930-v5`
+- `styles.css?v=20260930-v6`
+- `script.js?v=20260930-v6`
 
 Increment the version string when CSS or JavaScript changes so browsers fetch the updated assets after deployment.

@@ -45,6 +45,17 @@ if (contactForm) {
         headers: { Accept: 'application/json' }
       });
       if (response.ok) {
+        const submittedCategory = document.getElementById('category')?.value || 'その他';
+
+        // Record a lead only after Formspree confirms successful submission.
+        // Never send name, email address, message content, or other PII to Google Analytics.
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', {
+            lead_source: 'website_contact_form',
+            service_category: submittedCategory
+          });
+        }
+
         showStatus('送信しました。お問い合わせありがとうございます。内容を確認のうえご連絡します。', 'success');
         contactForm.reset();
         const params = new URLSearchParams(window.location.search);
