@@ -13,7 +13,9 @@ Public website for **TMWD Works**.
 - `/business.html` — AI / software / IT support for sole proprietors and small businesses
 - `/learning.html` — IT / programming tutoring and technical mentoring
 - `/contact.html` — contact form UI
-- `/privacy.html` — privacy policy
+- `/privacy.html` — website privacy policy
+- `/apps/rhythmquiz/privacy/` — RhythmQuiz privacy policy (Japanese / English)
+- `/app-ads.txt` — authorized seller declaration for AdMob
 
 ## Contact form
 
