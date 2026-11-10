@@ -259,6 +259,7 @@ p { margin-top: 0; }
 }
 
 .section-heading.compact { margin-bottom: 34px; }
+.problem-heading-quote { white-space: nowrap; }
 .section-heading > p:last-child { color: var(--muted); }
 
 .audience-grid {
