@@ -1,0 +1,4 @@
+# Project-scoped config: effective only when Codex trusts this project.
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 2

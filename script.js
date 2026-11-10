@@ -88,3 +88,14 @@ if (contactForm) {
     }
   });
 }
+
+document.querySelectorAll('a[data-app-store-position]').forEach(link => {
+  link.addEventListener('click', () => {
+    if (typeof gtag === 'function') {
+      gtag('event', 'app_store_click', {
+        app_name: 'RhythmQuiz',
+        link_position: link.dataset.appStorePosition
+      });
+    }
+  });
+});
